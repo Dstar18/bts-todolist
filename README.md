@@ -75,6 +75,27 @@ Body:
 }
 ```
 
+Response:
+```sh
+{
+    "code": 200,
+    "message": "Login successful",
+    "data": {
+        "_previous": {
+            "url": "http://localhost:8000/api/checklist/3/item"
+        },
+        "_flash": {
+            "old": [],
+            "new": []
+        },
+        "_token": "7eSVCQr4fWXV2uCJzhzzhOoUE6WTeUOHLgim3ato",
+        "id": 1,
+        "email": "boy@gmail.com",
+        "firstname": "boy"
+    }
+}
+```
+
 **#Checklist Detail with items**
 - Method: GET
 - URL: {base_url}/api/checklist/{id}/item
@@ -104,5 +125,29 @@ Response:
             }
         ]
     }
+}
+```
+
+**#Create Checklist**
+- Method: POST
+- URL: {base_url}/api/checklist
+
+Authentication:
+- Type: Basic Auth
+- Login: Required
+
+Body:
+```sh
+{
+    "_token": {input_token},
+    "title": "Belanja"
+}
+```
+
+Response:
+```sh
+{
+    "code": 200,
+    "message": "Checklist created successfully"
 }
 ```
