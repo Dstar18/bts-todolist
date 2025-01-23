@@ -12,8 +12,10 @@ Technical Test Backend Engineer Laravel (RestAPI), Use PHP Laravel to make the T
 
 Feature:
 - Basic Auth Login API and encrypt like base64
-      "username": {email_user}
-      "password": {password_user}
+```sh
+"username": {email_user}
+"password": {password_user}
+```
 - Login and logout User
 - Checklist (Create, Update, Delete, Reads, Detail with items)
 - Item (Create, Detail, Update(item/status), Delete)
